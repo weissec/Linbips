@@ -26,9 +26,11 @@ Output Format Types:
 
 Example: `gmspufl.py -c Ecorp -t 2 -o Usernames.txt -n 100`
 
+Required arguments:
+ * -c COMPANY  The target company name
+
 Optional arguments:
  * -h, --help  show this help message and exit
- * -c COMPANY  The target company name
  * -t TYPE     Type of output format
  * -o FILEN    Output file name
  * -n NUMBER   Number of results (default: 50)
