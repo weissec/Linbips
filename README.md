@@ -2,6 +2,11 @@
 ## Get Me Some Potential Usernames From Linkedin
 Python script that uses Google dork to get a list of potential usernames given a target Company name.
 
+Why?
+------------------------
+A list of usernames generated using OSINT is mostly useful for Password Spray attacks.
+For example, in an Active Directory environment the generated list can be fired against a Domain Controller using the smb_login module in metasploit, using a weak password like "Pasword1".
+
 How to install:
 -------------------------
 Downoad the files using git:
