@@ -1,10 +1,13 @@
-# GMSPUFL
+                                             _              _ _       
+ _   _ ___  ___ _ __ ___  ___  __ _ _ __ ___| |__   ___  __| |_)_ __  
+| | | / __|/ _ \ '__/ __|/ _ \/ _` | '__/ __| '_ \ / _ \/ _` | | '_ \ 
+| |_| \__ \  __/ |  \__ \  __/ (_| | | | (__| | | |  __/ (_| | | | | |
+ \__,_|___/\___|_|  |___/\___|\__,_|_|  \___|_| |_|\___|\__,_|_|_| |_|
+     
+*** Update Oct 2020 - upgraded to Python3
 
 
-*** Update Oct 2020 - Working on upgrading to Python3
-
-
-## Get Me Some Potential Usernames From Linkedin
+## Description:
 Python script that uses Google dork to get a list of potential usernames given a target Company name.
 
 Why?
@@ -15,17 +18,14 @@ For example, in an Active Directory environment the generated list can be fired 
 How to install:
 -------------------------
 Downoad the files using git:
-`git clone https://github.com/weissec/GMSPUFL.git`
+`git clone https://github.com/weissec/usersearchedin.git`
 
 Use Pip to install the required packages:
 `pip install -r requirements.txt`
 
 How to use:
 ------------------------
-usage: `gmspufl.py [-h] -c COMPANY [-t TYPE] [-o FILEN] [-n NUMBER] [-s]`
-
-Given a target company name, retrieve a list of potential
-usernames from Linkedin using a google dork.
+usage: `./usersearchedin.py [-h] -c COMPANY [-t TYPE] [-o FILEN] [-n NUMBER] [-s]`
 
 Output Format Types: 
 * 1 = NameSurname
@@ -34,7 +34,7 @@ Output Format Types:
 * 4 = NameS
 * 5 = N.Surname
 
-Example: `gmspufl.py -c Ecorp -t 2 -o Usernames.txt -n 100`
+Example: `./usersearchedin.py -c Ecorp -t 2 -o Usernames.txt -n 100`
 
 Required arguments:
  * -c COMPANY  The target company name
