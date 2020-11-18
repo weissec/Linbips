@@ -30,7 +30,7 @@ Output Format Types:
 * 4 = NameS
 * 5 = N.Surname
 
-Example: `./usersearchedin.py -c Ecorp -t 2 -o Usernames.txt -n 100`
+Example: `./usersearchedin.py -c "Ecorp Inc" -t 2 -o Usernames.txt -n 100`
 
 Required arguments:
  * -c COMPANY  The target company name
