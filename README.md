@@ -31,14 +31,12 @@ Username Output Format Types:
 * 4 = NameS
 * 5 = N.Surname
 
-Required arguments:
+Required arguments (one of the two):
  * -c COMPANY  The target company name
  * -e COMPANY  The file containing a list of emails
 
 Optional arguments:
  *  -h, --help  show this help message and exit
- *  -c COMPANY  The company name
- *  -e EMAILS   File including a list of emails
  *  -p PAGES    Number of pages, default=1
  *  -o OUTFILE  Output file name (CSV). Default: linbips-output.csv
  *  -u          Also generate a list of potential usernames
