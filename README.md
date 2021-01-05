@@ -20,8 +20,8 @@ Use Pip to install the required packages:
 
 How to use / Modes:
 ------------------------
-Company Mode: `./linbips.py -c COMPANY [-o OUTPUT.csv] [-n NUMBER]`
-Email Mode: `./linbips.py -e EMAILS.txt [-o OUTPUT.csv]`
+Company Mode: `./linbips.py -c COMPANY [-o OUTPUT.csv] [-n NUMBER]`  
+Email Mode: `./linbips.py -e EMAILS.txt [-o OUTPUT.csv]`  
 Usernames Mode: `./linbips.py -u -c COMPANY [-o OUTPUT.csv]`
 
 Username Output Format Types: 
