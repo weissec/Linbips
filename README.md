@@ -41,4 +41,6 @@ Optional arguments:
  *  -o OUTFILE  Output file name (CSV). Default: linbips-output.csv
  *  -u          Also generate a list of potential usernames
 
-
+Output Format:
+------------------------
+Name Surname,   Role,   Linkedin URL,  Email,  NameSurname,  Name.Surname,  NSurname,  NameS,  N.Surname  
