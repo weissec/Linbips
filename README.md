@@ -43,4 +43,4 @@ Optional arguments:
 
 Output Format:
 ------------------------
-Name Surname,   Role,   Linkedin URL,  Email,  NameSurname,  Name.Surname,  NSurname,  NameS,  N.Surname  
+Name Surname | Role | Linkedin URL | Email | NameSurname | Name.Surname | NSurname | NameS | N.Surname  
