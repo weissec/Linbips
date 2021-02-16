@@ -33,7 +33,7 @@ Username Output Format Types:
 
 Required arguments (one of the two):
  * -c COMPANY  The target company name
- * -e COMPANY  The file containing a list of emails
+ * -e EMAILS.TXT  The file containing a list of emails
 
 Optional arguments:
  *  -h, --help  show this help message and exit
