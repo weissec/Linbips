@@ -6,9 +6,9 @@ The script can also be used to scrape a list of potential usernames in different
 
 Why?
 ------------------------
-Retrieving a list of employees and their role in an organistation might be useful for Red Team engagements and mostly phishing attacks.
+Retrieving a list of employees and their role in an organistation might be useful during an OSINT phase for Red Teaming, Phishing, etc.
 Alternatively a list of potential usernames is mostly useful for Password Spray attacks.
-For example, in an Active Directory environment the generated list can be fired against a Domain Controller using the smb_login module in metasploit, using a weak password like "Pasword1".
+For example, in an Active Directory environment the generated list can be fired against a Domain Controller using the Metasploit "smb_login" module, with a weak password such as "Pasword123!".
 
 How to install:
 -------------------------
