@@ -1,5 +1,8 @@
 # Linbips.py
      
+> [!ATTENTION]
+> The script no longer works due to Google restrictions.
+
 ## Description:
 This python script can be used to discover a list of employees and their role in a given organisation.
 The script can also be used to scrape a list of potential usernames in different formats given a target Company name (-u option).
