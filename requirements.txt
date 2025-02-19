@@ -1,1 +1,16 @@
-search-engine-parser==0.6.2
+aiohappyeyeballs==2.4.6
+aiohttp==3.11.12
+aiosignal==1.3.2
+attrs==25.1.0
+beautifulsoup4==4.13.3
+fake-useragent==0.1.14
+frozenlist==1.5.0
+idna==3.10
+lxml==4.9.4
+multidict==6.1.0
+propcache==0.2.1
+search-engine-parser==0.6.8
+soupsieve==2.6
+typing_extensions==4.12.2
+urllib3==2.3.0
+yarl==1.18.3
