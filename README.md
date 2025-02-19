@@ -18,9 +18,29 @@ Download the files using git:
 Use Pip to install the required packages:
 `pip install -r requirements.txt`
 
-How to use / Modes:
+Usage:
 ------------------------
-Company Mode: `./linbips.py -c COMPANY [-o OUTPUT.csv] [-n NUMBER]`  
+```
+usage: linbips.py [-c COMPANY] [-e EMAILS] [-p PAGES] [-o OUTFILE] [-u] [-h]
+
+LinkedIn passive scraper. Given a target company name, retrieves a list of employees and their roles from LinkedIn. If the -u option is used, a list of potential AD usernames in different formats is also generated. This scraper can also be run by providing a list of email addresses.
+
+options:
+  -c COMPANY, --company COMPANY
+                        Company name to search
+  -e EMAILS, --emails EMAILS
+                        File containing email addresses
+  -p PAGES, --pages PAGES
+                        Number of pages to scrape (default: 1)
+  -o OUTFILE, --outfile OUTFILE
+                        Output CSV file (default: linbips-output.csv)
+  -u, --usernames       Generate username variations
+  -h, --help            Show this help message and exit
+```
+
+Modes:
+------------------------
+Company Mode: `./linbips.py -c COMPANY [-o OUTPUT.csv] [-p NUMBER]`  
 Email Mode: `./linbips.py -e EMAILS.txt [-o OUTPUT.csv]`  
 Usernames Mode: `./linbips.py -u -c COMPANY [-o OUTPUT.csv]`
 
