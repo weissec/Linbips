@@ -1,6 +1,6 @@
 # Linbips.py
      
-> [!ATTENTION]
+> [!WARNING]  
 > The script no longer works due to Google restrictions.
 
 ## Description:
