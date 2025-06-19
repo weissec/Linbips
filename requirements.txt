@@ -12,5 +12,5 @@ propcache==0.2.1
 search-engine-parser==0.6.8
 soupsieve==2.6
 typing_extensions==4.12.2
-urllib3==2.3.0
+urllib3==2.5.0
 yarl==1.18.3
