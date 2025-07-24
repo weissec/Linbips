@@ -5,13 +5,13 @@
 
 ## (NEW) Workaround:
 
-Search manually on Google using the following dork: `site:linkedin.com/in "Company Name"`
-Add the following to the URL: &num=100
-     e.g. "https://www.google.com/search?q=site:linkedin.com/in+%22CompanyName%22&num=100"
-Open the browser console (CTRL + SHIFT + J).
-Paste the following snippet to copy the results in the clipboard.
+1. Search manually on Google using the following dork: `site:linkedin.com/in "Company Name"` 
+2. Add the following to the URL: &num=100  
+     1. e.g. "https://www.google.com/search?q=site:linkedin.com/in+%22CompanyName%22&num=100" 
+3. Open the browser console (CTRL + SHIFT + J). 
+4. Paste the following snippet to copy the results in the clipboard. 
 
-```
+```javascript
 (() => {
   const results = [];
 
@@ -53,8 +53,8 @@ Paste the following snippet to copy the results in the clipboard.
 
 ```
 
-Paste the content into a CSV file.
-Repeat for each page.
+5. Paste the content into a CSV file.
+6. Repeat for each page.
 
 # OLD Description
 
