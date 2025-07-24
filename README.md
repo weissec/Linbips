@@ -3,6 +3,61 @@
 > [!WARNING]  
 > The script no longer works due to Google restrictions.
 
+## (NEW) Workaround:
+
+Search manually on Google using the following dork: `site:linkedin.com/in "Company Name"`
+Add the following to the URL: &num=100
+     e.g. "https://www.google.com/search?q=site:linkedin.com/in+%22CompanyName%22&num=100"
+Open the browser console (CTRL + SHIFT + J).
+Paste the following snippet to copy the results in the clipboard.
+
+```
+(() => {
+  const results = [];
+
+  // Loop through all links on the page
+  document.querySelectorAll('a').forEach(link => {
+    const url = link.href;
+
+    // Filter only LinkedIn profile links
+    if (url.includes('linkedin.com/in') && link.querySelector('h3')) {
+      const title = link.querySelector('h3')?.innerText.trim() || '';
+      const [name, role] = title.split(/[-–]/).map(s => s.trim());
+
+      results.push({
+        name: name || '',
+        role: role || '',
+        url: url.split('?')[0]
+      });
+    }
+  });
+
+  // Print results to console
+  console.clear();
+  console.log('🔎 Extracted LinkedIn Profiles:\n');
+  results.forEach((r, i) => {
+    console.log(`${i + 1}. ${r.name} | ${r.role} | ${r.url}`);
+  });
+
+  // Format as CSV
+  const csv = [
+    ['Name', 'Role', 'LinkedIn URL'],
+    ...results.map(r => [r.name, r.role, r.url])
+  ]
+    .map(row => row.map(field => `"${field}"`).join(','))
+    .join('\n');
+
+  copy(csv);
+  console.log(`\n✅ Copied ${results.length} entries to clipboard as CSV.`);
+})();
+
+```
+
+Paste the content into a CSV file.
+Repeat for each page.
+
+# OLD Description
+
 ## Description:
 This python script can be used to discover a list of employees and their role in a given organisation.
 The script can also be used to scrape a list of potential usernames in different formats given a target Company name (-u option).
